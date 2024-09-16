@@ -24,7 +24,7 @@ hostname=$(hostname -f)
 
 # retrieve hardware specification variables
 memory_free=$(echo "$vmstat_mb" | awk '{print $4}'| tail -n1 | xargs)
-cpu_idle=$(echo "$vmstat_mb"| tail -1 | awk '{print $15}') 
+cpu_idle=$(echo "$vmstat_mb"| tail -1 | awk '{print $15}')
 cpu_kernel=$(echo "$vmstat_mb"| tail -1 | awk '{print $14}')
 disk_io=$(echo "$vmstat_out"--unit M -d | tail -1 | awk -v col="10" '{print $col}')
 disk_available=$(df -h --output=avail / | tail -1 | xargs)
