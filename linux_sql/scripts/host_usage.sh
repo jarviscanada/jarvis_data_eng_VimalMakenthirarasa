@@ -18,7 +18,7 @@ db_name=$3
 psql_user=$4
 psql_password=$5
 
-# save machine stats (MB) and current machien hostname to variables
+# save machine stats (MB) and current machine hostname to variables
 vmstat_mb=$(vmstat --unit M)
 hostname=$(hostname -f)
 
@@ -26,19 +26,26 @@ hostname=$(hostname -f)
 memory_free=$(echo "$vmstat_mb" | awk '{print $4}'| tail -n1 | xargs)
 cpu_idle=$(echo "$vmstat_mb"| tail -1 | awk '{print $15}')
 cpu_kernel=$(echo "$vmstat_mb"| tail -1 | awk '{print $14}')
-disk_io=$(echo "$vmstat_out"--unit M -d | tail -1 | awk -v col="10" '{print $col}')
-disk_available=$(df -h --output=avail / | tail -1 | xargs)
+disk_io=$(echo "$vmstat_mb"--unit M -d | tail -1 | awk -v col="10" '{print $col}')
+disk_available=$(df -BM --output=avail / | tail -1 | sed 's/M//g' | xargs)
 
 timestamp=$(date +"%Y-%m-%d %H:%M:%S")
+export PGPASSWORD=$psql_password
 
 # Subquery to find matching id in host_info table
-host_id="(SELECT id FROM host_info WHERE hostname='$hostname')";
+echo "Host name: $hostname"
+host_id=$(psql -h "$psql_host" \
+               -p "$psql_port" \
+               -U "$psql_user" \
+               -d "$db_name" \
+               -t -A \
+               -c "SELECT id FROM host_info WHERE hostname='$hostname';" | xargs)
+echo "Host ID: $host_id"
 
 # PSQL command: Inserts server usage data into host_usage table
 # Note: be careful with double and single quotes
 insert_statement="INSERT INTO host_usage (timestamp, host_id, memory_free, cpu_idle, cpu_kernel, disk_io, disk_available)
-VALUES ('$timestamp', $host_id, $memory_free, $cpu_idle, $cpu_kernel, $disk_io, $disk_available');"
+VALUES ('$timestamp', $host_id, $memory_free, $cpu_idle, $cpu_kernel, $disk_io, $disk_available);"
 
 # execute the INSERT statement through the psql CLI tool
-export PGPASSWORD=$psql_password
 psql -h "$psql_host" -p "$psql_port" -U "$psql_user" -d "$db_name" -c "$insert_statement"

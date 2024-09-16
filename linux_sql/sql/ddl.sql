@@ -1,3 +1,4 @@
+\c host_agent;
 -- 2. create `host_info` table if not exist
 CREATE TABLE IF NOT EXISTS PUBLIC.host_info
 (
@@ -27,6 +28,6 @@ CREATE TABLE IF NOT EXISTS PUBLIC.host_usage
     CONSTRAINT host_usage_host_info_fk FOREIGN KEY (host_id) REFERENCES
         host_info(id)
 );
--- Execute ddl.sql script on the host_agent database againse the psql instance
-    -- execute psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
+-- Execute ddl.sql script on the host_agent database against the psql instance
+    -- psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
 
