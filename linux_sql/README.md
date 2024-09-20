@@ -28,6 +28,12 @@ bash> crontab -e
 * * * * * bash [path-to-host_usage.sh] localhost 5432 host_agent postgres password > /tmp/host_usage.log
 ```
 
+# Implementation
+This project was built using the full software development life cycle (SDLC) to plan, design, implement, test, and deploy the Linux Monitoring Agent. During the **planning** stage, the objectives of the project were defined based on requirements of the users. Requirements were allocated resources and tasks were scheduled accordingly to be completed within the next sprint. In the **design** stage, I analyzed the requirements and selected the technologies that would be used for the project. Specifically, Bash scripts would be used for data collection, PostgreSQL for data storage, Docker for containerizing the PostgreSQL instance, Git for version control, and crontab for task scheduling.
+
+Once the tasks were sorted out and the technologies were selected, I started the **implementation** stage by setting up version control using Git and provisioning the PostgreSQL instance using Docker. I then setup the `ddl.sql` file to automatically create the two tables (`host_info` and `host_usage`)  in the `host_agent` PostgreSQL database. The next step was to create the Bash scripts to collect hardware specification and real-time resource usage data. `host_info.sh` collects data on hardware specification such as the number of CPUs, CPU speed, and the timestamp at which the data was collected. This script is run once to gather the necessary hardware information for the system. `host_usage.sh` collects data on real-time resource usage such as the total memory, available disk space, and the CPU idle time percentage. I used crontab to automatically run this `host_usage.sh` script once every 60 seconds and update the `host_agent` database accordingly.
+
+Once the implementation of the project was finished, I moved on to the **testing** stage, where I checked to see if the database was being updated correctly every 60 seconds with real-time resource usage data, and to ensure that there were no issues with insertions into the database. In the final **deployment** stage, after confirming that the project was ready for production, I deployed the project using Docker and Crontab.
 
 # Architecture
 ![architecture diagram](assets/architecture_diagram.png)
@@ -101,7 +107,8 @@ The `host_data` database consists of two tables: `host_info` to store hardware s
 | disk_available | INTEGER   | Available disk space in MB       |
 | timestamp      | TIMESTAMP | Timestamp when data was collected     |
 
-
+# Test
+Each of the scripts were tested before deployment to ensure that the right data was gathered using the Bash scripts, and then inserted correctly into the `host_agent` database without any issues. I verified that the scripts were being executed every 60 seconds using crontab and updated accordingly in the database.
 
 
 # Deployment
@@ -116,6 +123,5 @@ To ensure reliability when scaling the application to work with larger Linux clu
 
 ### 3. Improve database performance 
 When scaling the application to work with larger Linux clusters, performance might slow down. Performance could be improved to maintain fast read/write speeds by implementing database sharding. By partitioning the data cross multiple PostgreSQL instances, queries wouldn’t be throttled as easily when multiple requests are being made at once for different data stored in the database. Overall, this would help with horizontal scaling as more nodes are added to the cluster and allow the system to handle a higher volume of data and requests for a larger amount of servers without slowing down service.
-
 
 
