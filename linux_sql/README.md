@@ -30,7 +30,7 @@ bash> crontab -e
 
 
 # Architecture
-Architecture diagram
+![architecture diagram](assets/architecture_diagram.png)
 
 # Scripts
 ## psql_docker.sh
