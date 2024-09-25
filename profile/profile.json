@@ -1,25 +1,21 @@
 {
   "education": [
     {
-      "awards_achievements": [
-        "Scholarship",
-        "Dean's List (2015, 2016): Ut enim ad minim veniam",
-        "GPA: 3.8/4.0"
-      ],
-      "degree": "Bachelor of Applied Sciences",
-      "department": "Electrical and Computer Engineering",
-      "duration": "2012-2016",
-      "school_name": "XYZ university"
+      "awards_achievements": null,
+      "degree": "Bachelor of Science",
+      "department": "Computer Science",
+      "duration": "2018-2023",
+      "school_name": "University of Western Ontario"
     },
     {
       "awards_achievements": null,
-      "degree": "Master of Engineering",
-      "department": "Electrical and Computer Engineering",
-      "duration": "2016-2018",
-      "school_name": "XYZ university"
+      "degree": "Master of Science",
+      "department": "Computer Science",
+      "duration": "2024-Present",
+      "school_name": "Georgia Institute of Technology"
     }
   ],
-  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_demo",
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa",
   "highlighted_projects": [
     {
       "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
@@ -112,21 +108,23 @@
   ],
   "skills": {
     "competent": [
-      "Donec",
-      "fermentum",
+      "Docker",
+      "MongoDB/Express.js/React/Node.js",
       "Donec",
       "fermentum",
       "Donec"
     ],
     "familiar": [
-      "Donec",
-      "fermentum",
+      "C/C++",
+      "Angular",
       "fermentum",
       "fermentum",
       "fermentum"
     ],
     "proficient": [
-      "Java",
+      "Java/Spring",
+      "Python/Flask",
+      "JavaScript",
       "Linux/Bash",
       "RDBMS/SQL",
       "Agile/Scrum",
