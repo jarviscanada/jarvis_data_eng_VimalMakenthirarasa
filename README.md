@@ -34,7 +34,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_VimalMaken
 ## Education
 **University of Western Ontario (2018-2023)**, Bachelor of Science, Computer Science
 
-**Georgia Institute of Technology (2024-Present)**, Master of Science, Computer Science
+**Georgia Institute of Technology (2024-Present)**, Master of Science, Computer Science(remote, part-time)
 
 
 ## Miscellaneous
