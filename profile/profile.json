@@ -31,7 +31,7 @@
   "jarvis_projects": [
     {
       "description": "Designed, implemented, tested, and deployed a Linux cluster monitoring agent to gather and monitor hardware specifications and real-time resource usage of a Linux cluster. Created Bash scripts to automate processes for creating, starting, and stopping the Docker container used for the PostgreSQL instance, as well as to automate creation of PostgreSQL database tables. Populated database tables with hardware specifications and resource usage data using Linux commands. Automated gathering of hardware specifications and resource usage data by using Crontab to schedule running the data collection scripts every 60 seconds and updating the database accordingly.",
-      "git_url": "https://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa/tree/main/linux_sql",
+      "git_url": "/linux_sql",
       "name": "Linux Cluster Monitoring Agent"
     }
   ],
