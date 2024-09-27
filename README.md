@@ -39,7 +39,3 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_VimalMaken
 
 ## Miscellaneous
 - Hackwestern 8 - won Best Fintech Hack award among 341 participants
-- Winner
-- Basketball player
-- Competitive gaming
-- Volunteer, ABC Food bank: Ut enim ad minim veniam
