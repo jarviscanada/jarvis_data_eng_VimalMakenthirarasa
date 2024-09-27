@@ -1,50 +1,34 @@
 # Vimal Makenthirarasa . Jarvis Consulting
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit.
+I am a recent graduate from the University of Western Ontario, and a current part-time Masters student at the Georgia Institute of Technology (remote), working towards a Masters degree in Computer Science with a specialization in Machine Learning. My academic experience has provided me with an extensive understanding of programming and proper software development practices, including writing clean code and efficiently debugging issues to provide high quality software solutions to suit clients’ needs. In terms of professional experience, I have worked as a Web Developer for the University of Western Ontario, working on real-time management of a dynamic website, ensuring up to date information delivery and a seamless user experience. I also worked as a Software Developer for LingoThyme Inc., an EdTech startup company created to help users learn languages in a collaborative environment. During my time at LingoThyme Inc., I played a pivotal role in building the company’s full-stack collaborative learning platform and developed several features including the implementation of live data synchronization between users with optimized socket functionality and the creation of multiple custom responsive web pages to deliver a satisfying user experience. I am personally driven by the potential to create impactful applications that solve real-world problems and enhance user experiences for many people, and I am excited to contribute to an innovative team where I can continue to expand my skills and make a meaningful difference.
 
 ## Skills
 
-**Proficient:** Java/Spring, Python/Flask, JavaScript, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
+**Proficient:** Java/Spring, Python, JavaScript, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
 
-**Competent:** Docker, MongoDB/Express.js/React/Node.js, Donec, fermentum, Donec
+**Competent:** Docker, MongoDB/Express.js/React/Node.js, HTML/CSS, Flask, Pandas
 
-**Familiar:** C/C++, Angular, fermentum, fermentum, fermentum
+**Familiar:** C/C++, Angular, Google Cloud Platform (GCP), Pytorch, Matplotlib
 
 ## Jarvis Projects
 
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa](https://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa/tree/master/linux_sql)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
-
-**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa/tree/master/core_java)]:
-      
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa/tree/master/springboot)]: Not Started
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa/tree/master/python_data_anlytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa/tree/master/cloud_devops)]: Not Started
+**Linux Cluster Monitoring Agent** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa/tree/masterhttps://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa/tree/main/linux_sql)]: Designed, implemented, tested, and deployed a Linux cluster monitoring agent to gather and monitor hardware specifications and real-time resource usage of a Linux cluster. Created Bash scripts to automate processes for creating, starting, and stopping the Docker container used for the PostgreSQL instance, as well as to automate creation of PostgreSQL database tables. Populated database tables with hardware specifications and resource usage data using Linux commands. Automated gathering of hardware specifications and resource usage data by using Crontab to schedule running the data collection scripts every 60 seconds and updating the database accordingly.
 
 
 ## Highlighted Projects
-**Web app for resturant** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Stock Analyzer using CART Regression**: Conducted an in-depth evaluation of four Classification and Regression Tree (CART) regression algorithms—Decision Tree Learner, Random Tree Learner, Bootstrap Aggregating Learner (Bag Learner), and Insane Learner—through the design and execution of three targeted experiments using stock data for multiple worldwide indexes. Analyzed the effects of leaf size on overfitting, assessed the efficacy of bagging in mitigating overfitting, and compared decision trees with random trees using innovative performance metrics. Utilized Python, along with Matplotlib and NumPy, to implement the algorithms, perform data analysis, and visualize results. Delivered actionable insights to enhance model generalizability and optimize predictive performance, demonstrating strong proficiency in machine learning techniques and data visualization.
 
-**Machine Learning**: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Facial Recognition Based Home Security System**: Developed a robust home security system leveraging C++ and OpenCV on a Raspberry Pi platform. Integrated advanced functionalities including facial recognition, object detection, and real-time image processing to monitor live camera feeds effectively. Implemented a Haar Cascade classifier to accurately identify known faces, achieving a 91% accuracy rate, thereby ensuring reliable security monitoring and enhancing user confidence in system performance. Demonstrated expertise in computer vision, embedded systems, and real-time data processing to deliver a scalable and efficient security solution.
 
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2020-present)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Software Developer, Jarvis Consulting Group (2024-Present)**: Worked with a team of Software Developers in an Agile team environment to create several technical projects using the full software development life cycle. Developed and deployed a Linux cluster monitoring agent using PostgreSQL, Docker, and Bash scripting to gather and monitor hardware specifications and real-time resource usage of a Linux cluster. Enhanced system visibility and resource optimization for system administrators to help them make informed decisions on future resource planning.
 
-**Tutor, XYZ Company (2019)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Web Developer, University of Western Ontario (September 2022 - April 2023)**: Worked on real-time management of dynamic website, ensuring up to date information delivery and seamless user experience. Developed efficient automation processes to streamline workflow, resulting in 40% reduction in time spent on routine tasks and maintaining consistent updates. Enhanced website usability and boosted user traffic by 25% through implementation of intuitive navigation structures and organization of content for optimal user engagement.
 
 
 ## Education
@@ -54,7 +38,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_VimalMaken
 
 
 ## Miscellaneous
-- Udacity Machine Learning (2019)
+- Hackwestern 8 - won Best Fintech Hack award among 341 participants
 - Winner
 - Basketball player
 - Competitive gaming
