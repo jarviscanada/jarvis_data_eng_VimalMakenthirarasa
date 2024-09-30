@@ -90,7 +90,10 @@ professional_experience:
     company: "University of Western Ontario"
     duration: "September 2022 - April 2023"
     description: "Worked on real-time management of dynamic website, ensuring up to date information delivery and seamless user experience. Developed efficient automation processes to streamline workflow, resulting in 40% reduction in time spent on routine tasks and maintaining consistent updates. Enhanced website usability and boosted user traffic by 25% through implementation of intuitive navigation structures and organization of content for optimal user engagement."
-
+  - title: "Software Developer"
+    company: "LingoThyme Inc."
+    duration: "May 2021 - August 2021"
+    description: "Played a pivotal role in the development of the company's full-stack collaborative learning platform using React, Express, Node.js, and MongoDB. Took charge of optimizing real-time data synchronization and reducing latency by 33% with Socket.io, significantly improving live collaboration features. Improved user experience through custom web development, leveraging image compression, resource optimization, and asynchronous loading techniques, which led to a 55% reduction in page load times. This project resulted in a 30% increase in engagement metrics during test phases, showcasing the platform's impact on user interaction and responsiveness."
 #List of edcuation
 education: 
   - school_name: "Georgia Institute of Technology"
