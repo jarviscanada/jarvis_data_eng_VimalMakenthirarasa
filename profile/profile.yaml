@@ -5,7 +5,7 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_VimalMaken
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: I am a recent graduate from the University of Western Ontario, and a current part-time Masters student at the Georgia Institute of Technology (remote), working towards a Masters degree in Computer Science with a specialization in Machine Learning. My academic experience has provided me with an extensive understanding of programming and proper software development practices, including writing clean code and efficiently debugging issues to provide high quality software solutions to suit clients’ needs. In terms of professional experience, I have worked as a Web Developer for the University of Western Ontario, working on real-time management of a dynamic website, ensuring up to date information delivery and a seamless user experience. I also worked as a Software Developer for LingoThyme Inc., an EdTech startup company created to help users learn languages in a collaborative environment. During my time at LingoThyme Inc., I played a pivotal role in building the company’s full-stack collaborative learning platform and developed several features including the implementation of live data synchronization between users with optimized socket functionality and the creation of multiple custom responsive web pages to deliver a satisfying user experience. I am personally driven by the potential to create impactful applications that solve real-world problems and enhance user experiences for many people, and I am excited to contribute to an innovative team where I can continue to expand my skills and make a meaningful difference.
+summary: I am a recent graduate from the University of Western Ontario, and a current part-time Masters student at the Georgia Institute of Technology (remote), working towards a Masters degree in Computer Science with a specialization in Machine Learning. My academic experience has provided me with an extensive understanding of programming and proper software development practices, including writing clean code and efficiently debugging issues to provide high quality software solutions to suit clients’ needs. In terms of professional experience, I have worked as a Web Developer for the University of Western Ontario, working on real-time management of a dynamic website, ensuring up to date information delivery and a seamless user experience. I also worked as a Software Developer for LingoThyme Inc., an EdTech startup company created to help users learn languages in a collaborative environment. During my time at LingoThyme Inc., I played a pivotal role in building the company’s full-stack collaborative learning platform and developed several key features including the implementation of live data synchronization between users with optimized socket functionality and the creation of multiple custom responsive web pages to deliver a satisfying user experience.
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -22,10 +22,10 @@ skills:
   # At least 5 skills
   competent:
     - Docker 
-    - MongoDB/Express.js/React/Node.js
-    - HTML/CSS
-    - Flask
+    - React (MERN)
     - Pandas
+    - Flask
+    - HTML/CSS
   # At least 5 skills
   familiar:
     - C/C++
@@ -40,7 +40,7 @@ jarvis_projects:
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Designed, implemented, tested, and deployed a Linux cluster monitoring agent to gather and monitor hardware specifications and real-time resource usage of a Linux cluster. Created Bash scripts to automate processes for creating, starting, and stopping the Docker container used for the PostgreSQL instance, as well as to automate creation of PostgreSQL database tables. Populated database tables with hardware specifications and resource usage data using Linux commands. Automated gathering of hardware specifications and resource usage data by using Crontab to schedule running the data collection scripts every 60 seconds and updating the database accordingly.
+    description: Designed, implemented, tested, and deployed a Linux cluster monitoring agent to gather and monitor hardware specifications and real-time resource usage of a Linux cluster. Created Bash scripts to automate processes for creating, starting, and stopping the Docker container used for the PostgreSQL instance, as well as to automate creation of PostgreSQL database tables. Populated database tables with hardware specifications and resource usage data using Linux commands. Automated gathering of hardware specifications and resource usage data by using Cron to schedule running the data collection scripts every 60 seconds and updating the database accordingly. Enhanced system visibility and resource optimization for system administrators to help them make informed decisions on future resource planning.
   # - name: "Core Java Apps"
   #   git_url: "/core_java"
   #   description:
@@ -93,6 +93,11 @@ professional_experience:
 
 #List of edcuation
 education: 
+  - school_name: "Georgia Institute of Technology"
+    duration: "2024-Present"
+    degree: "Master of Science"
+    department: "Computer Science(remote, part-time)"
+    awards_achievements:
   - school_name: "University of Western Ontario"
     duration: "2018-2023"
     degree: "Bachelor of Science"
@@ -102,11 +107,7 @@ education:
     #  - "Scholarship"
     #  - "Dean's List (2015, 2016): Ut enim ad minim veniam"
     #  - "GPA: 3.8/4.0"
-  - school_name: "Georgia Institute of Technology"
-    duration: "2024-Present"
-    degree: "Master of Science"
-    department: "Computer Science(remote, part-time)"
-    awards_achievements: 
+   
 
 #Optional section
 others:
@@ -115,3 +116,5 @@ others:
     #list of items
     bullets:
       - "Hackwestern 8 - won Best Fintech Hack award among 341 participants"
+      - "Used to play competitive League of Legends, ranked in top 0.2% of players, placed high in multiple amateur tournaments"
+      - "Member of the Western Strength weightlifting club with the goal of competing in the future"
