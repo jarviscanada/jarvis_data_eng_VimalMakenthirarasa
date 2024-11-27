@@ -1,0 +1,44 @@
+{
+  "symbol":"AAPL",
+  "companyName":"Apple Inc.",
+  "exchange":"Nasdaq Global Select",
+  "description":"Apple Inc is designs, manufactures and markets mobile communication and media devices and personal computers, and sells a variety of related software, services, accessories, networking solutions and third-party digital content and applications.",
+  "CEO":"Timothy D. Cook",
+  "sector":"Technology",
+  "financials":[
+    {
+      "reportDate":"2018-12-31",
+      "grossProfit":32031000000,
+      "costOfRevenue":52279000000,
+      "operatingRevenue":84310000000,
+      "totalRevenue":84310000000,
+      "operatingIncome":23346000000,
+      "netIncome":19965000000
+    },
+    {
+      "reportDate":"2018-09-30",
+      "grossProfit":24084000000,
+      "costOfRevenue":38816000000,
+      "operatingRevenue":62900000000,
+      "totalRevenue":62900000000,
+      "operatingIncome":16118000000,
+      "netIncome":14125000000
+    }
+  ],
+  "dividends":[
+    {
+      "exDate":"2018-02-09",
+      "paymentDate":"2018-02-15",
+      "recordDate":"2018-02-12",
+      "declaredDate":"2018-02-01",
+      "amount":0.63
+    },
+    {
+      "exDate":"2017-11-10",
+      "paymentDate":"2017-11-16",
+      "recordDate":"2017-11-13",
+      "declaredDate":"2017-11-02",
+      "amount":0.63
+    }
+  ]
+}
