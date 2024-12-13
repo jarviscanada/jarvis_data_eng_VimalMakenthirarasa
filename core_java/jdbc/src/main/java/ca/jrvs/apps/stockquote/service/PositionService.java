@@ -105,4 +105,9 @@ public class PositionService {
         dao.deleteById(ticker);
         logger.info("Successfully sold all shares for ticker {}.", ticker);
     }
+
+    public Iterable<Position> getAllPositions() {
+        logger.info("Retrieving all positions.");
+        return dao.findAll();
+    }
 }
