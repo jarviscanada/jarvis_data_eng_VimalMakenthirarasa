@@ -20,6 +20,8 @@ public class PositionService_IntTest {
     private static PositionDao positionDao;
     private static QuoteHttpHelper httpHelper;
     private static PositionService positionService;
+    private static QuoteService quoteService; // Added
+
 
     // db connection parameters
     private static final String DB_URL_TEST = "jdbc:postgresql://localhost:5432/host_agent_test";
@@ -68,8 +70,11 @@ public class PositionService_IntTest {
         OkHttpClient client = new OkHttpClient();
         httpHelper = new QuoteHttpHelper(apiKey, client);
 
+        // init QuoteService
+        quoteService = new QuoteService(quoteDao, httpHelper);
+
         // init PositionService
-        positionService = new PositionService(positionDao, quoteDao);
+        positionService = new PositionService(positionDao, quoteService);
     }
 
     @AfterClass

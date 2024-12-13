@@ -16,14 +16,14 @@ import static org.mockito.Mockito.*;
 public class PositionService_UnitTest {
 
     private PositionDao mockPositionDao;
-    private QuoteDao mockQuoteDao;
+    private QuoteService mockQuoteService;
     private PositionService positionService;
 
     @Before
     public void setUp() {
         mockPositionDao = mock(PositionDao.class);
-        mockQuoteDao = mock(QuoteDao.class);
-        positionService = new PositionService(mockPositionDao, mockQuoteDao);
+        mockQuoteService = mock(QuoteService.class);
+        positionService = new PositionService(mockPositionDao, mockQuoteService);
     }
 
     // test buying new position
@@ -33,11 +33,11 @@ public class PositionService_UnitTest {
         int numberOfShares = 100;
         double price = 450.0;
 
-        // mock QuoteDao.findById to return a valid Quote
+        // mock QuoteService.fetchQuoteDataFromAPI to return a valid Quote
         Quote mockQuote = new Quote();
         mockQuote.setTicker(ticker);
         mockQuote.setVolume(200);
-        when(mockQuoteDao.findById(ticker)).thenReturn(Optional.of(mockQuote));
+        when(mockQuoteService.fetchQuoteDataFromAPI(ticker)).thenReturn(Optional.of(mockQuote)); // Changed
         when(mockPositionDao.findById(ticker)).thenReturn(Optional.empty());
         ArgumentCaptor<Position> positionCaptor = ArgumentCaptor.forClass(Position.class);
         when(mockPositionDao.save(any(Position.class))).thenAnswer(invocation -> invocation.getArgument(0));
@@ -50,7 +50,7 @@ public class PositionService_UnitTest {
         assertEquals("Value paid should match", numberOfShares * price, result.getValuePaid(), 0.001);
 
         // verify interactions
-        verify(mockQuoteDao).findById(ticker);
+        verify(mockQuoteService).fetchQuoteDataFromAPI(ticker); // Changed
         verify(mockPositionDao).findById(ticker);
         verify(mockPositionDao).save(positionCaptor.capture());
 
@@ -68,11 +68,11 @@ public class PositionService_UnitTest {
         int numberOfShares = 50;
         double price = 450;
 
-        // mock QuoteDao.findById to return valid quote
+        // mock QuoteService.fetchQuoteDataFromAPI to return valid quote
         Quote mockQuote = new Quote();
         mockQuote.setTicker(ticker);
         mockQuote.setVolume(100);
-        when(mockQuoteDao.findById(ticker)).thenReturn(Optional.of(mockQuote));
+        when(mockQuoteService.fetchQuoteDataFromAPI(ticker)).thenReturn(Optional.of(mockQuote)); // Changed
 
         // mock PositionDao.findById to return existing position
         Position existingPosition = new Position();
@@ -91,7 +91,7 @@ public class PositionService_UnitTest {
         assertEquals("Value paid should be updated", 5000.0 + (numberOfShares * price), result.getValuePaid(), 0.001);
 
         // verify interactions
-        verify(mockQuoteDao).findById(ticker);
+        verify(mockQuoteService).fetchQuoteDataFromAPI(ticker); // Changed
         verify(mockPositionDao).findById(ticker);
         verify(mockPositionDao).save(positionCaptor.capture());
 

@@ -12,12 +12,12 @@ import java.util.Optional;
 public class PositionService {
 
     private final PositionDao dao;
-    private final QuoteDao quoteDao;
+    private final QuoteService quoteService;
     private static final Logger logger = LoggerFactory.getLogger(PositionService.class);
 
-    public PositionService(PositionDao dao, QuoteDao quoteDao) {
+    public PositionService(PositionDao dao, QuoteService quoteService) {
         this.dao = dao;
-        this.quoteDao = quoteDao;
+        this.quoteService = quoteService;
     }
 
     /**
@@ -43,7 +43,7 @@ public class PositionService {
         }
 
         // get latest quote to check ticker and get available volume
-        Optional<Quote> quoteOpt = quoteDao.findById(ticker);
+        Optional<Quote> quoteOpt = quoteService.fetchQuoteDataFromAPI(ticker);
         if (!quoteOpt.isPresent()) {
             logger.error("Invalid ticker symbol: {}", ticker);
             throw new IllegalArgumentException("Invalid ticker symbol: " + ticker);
