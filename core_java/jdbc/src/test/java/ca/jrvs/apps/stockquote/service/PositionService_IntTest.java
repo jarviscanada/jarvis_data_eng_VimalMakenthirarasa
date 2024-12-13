@@ -66,7 +66,8 @@ public class PositionService_IntTest {
         positionDao = new PositionDao(connection);
 
         // init QuoteHttpHelper
-        String apiKey = System.getenv("ALPHA_VANTAGE_API_KEY");
+        //String apiKey = System.getenv("ALPHA_VANTAGE_API_KEY");
+        String apiKey = "00d0a67d07msh301533398d4f49ap191c5djsn6eacf2ab47d8";
         OkHttpClient client = new OkHttpClient();
         httpHelper = new QuoteHttpHelper(apiKey, client);
 
