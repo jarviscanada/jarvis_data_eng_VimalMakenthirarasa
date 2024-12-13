@@ -5,6 +5,7 @@ import ca.jrvs.apps.stockquote.dao.QuoteDao;
 import ca.jrvs.apps.stockquote.dao.Position;
 import ca.jrvs.apps.stockquote.dao.Quote;
 import ca.jrvs.apps.stockquote.dao.QuoteHttpHelper;
+import okhttp3.OkHttpClient;
 import org.junit.*;
 
 import java.sql.*;
@@ -63,7 +64,9 @@ public class PositionService_IntTest {
         positionDao = new PositionDao(connection);
 
         // init QuoteHttpHelper
-        httpHelper = new QuoteHttpHelper();
+        String apiKey = System.getenv("ALPHA_VANTAGE_API_KEY");
+        OkHttpClient client = new OkHttpClient();
+        httpHelper = new QuoteHttpHelper(apiKey, client);
 
         // init PositionService
         positionService = new PositionService(positionDao, quoteDao);

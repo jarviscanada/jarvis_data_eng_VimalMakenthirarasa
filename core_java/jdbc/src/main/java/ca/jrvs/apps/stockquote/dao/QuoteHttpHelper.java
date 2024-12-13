@@ -15,8 +15,9 @@ public class QuoteHttpHelper {
     private String apiKey = System.getenv("ALPHA_VANTAGE_API_KEY");
     private OkHttpClient client;
 
-    public QuoteHttpHelper() {
-        this.client = new OkHttpClient();
+    public QuoteHttpHelper(String apiKey, OkHttpClient client) {
+        this.apiKey = apiKey;
+        this.client = client;
     }
 
     /**

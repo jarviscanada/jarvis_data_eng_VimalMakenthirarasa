@@ -3,6 +3,7 @@ package ca.jrvs.apps.stockquote.service;
 import ca.jrvs.apps.stockquote.dao.QuoteDao;
 import ca.jrvs.apps.stockquote.dao.Quote;
 import ca.jrvs.apps.stockquote.dao.QuoteHttpHelper;
+import okhttp3.OkHttpClient;
 import org.junit.*;
 import java.sql.*;
 import java.util.Optional;
@@ -51,7 +52,9 @@ public class QuoteService_IntTest {
         quoteDao = new QuoteDao(connection);
 
         // init QuoteHttpHelper
-        httpHelper = new QuoteHttpHelper();
+        String apiKey = System.getenv("ALPHA_VANTAGE_API_KEY");
+        OkHttpClient client = new OkHttpClient();
+        httpHelper = new QuoteHttpHelper(apiKey, client);
 
         // init QuoteService
         quoteService = new QuoteService(quoteDao, httpHelper);

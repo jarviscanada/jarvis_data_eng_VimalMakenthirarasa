@@ -29,19 +29,9 @@ public class QuoteHttpHelperTest {
     @Before
     public void setUp() throws Exception {
         MockitoAnnotations.openMocks(this);
-
+        String apiKey = "00d0a67d07msh301533398d4f49ap191c5djsn6eacf2ab47d8";
         // initialize QuoteHttpHelper
-        quoteHttpHelper = new QuoteHttpHelper();
-
-        // set API key
-        java.lang.reflect.Field apiKeyField = QuoteHttpHelper.class.getDeclaredField("apiKey");
-        apiKeyField.setAccessible(true);
-        apiKeyField.set(quoteHttpHelper, "00d0a67d07msh301533398d4f49ap191c5djsn6eacf2ab47d8");
-
-        // using reflection to inject the mocked OkHttpClient
-        java.lang.reflect.Field clientField = QuoteHttpHelper.class.getDeclaredField("client");
-        clientField.setAccessible(true);
-        clientField.set(quoteHttpHelper, mockOkHttpClient);
+        quoteHttpHelper = new QuoteHttpHelper(apiKey, mockOkHttpClient);
     }
 
     @Test
