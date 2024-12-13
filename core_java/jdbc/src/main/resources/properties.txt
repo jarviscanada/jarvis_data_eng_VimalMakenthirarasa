@@ -1,5 +1,5 @@
 db-class:org.postgresql.Driver
-server:localhost
+server:host.docker.internal
 database:host_agent
 port:5432
 username:postgres
