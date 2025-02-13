@@ -10,6 +10,8 @@ The LGS web app consists of a Frontend stack where resources are served through 
 
 ## Data Analytics and Wrangling
 ![Jupyter Notebook](./retail_data_analytics_wrangling.ipynb)
+
+
 Through the analysis of transaction data from LGS, various insights were gained regarding total invoice amount distribution, monthly sales, growth over time, active user statistics as well as user classification using RFM segmentation. LGS can utilize these insights to do the following:
 
 - Identify customer segments based on prior purchasing behavior
