@@ -31,22 +31,22 @@
   "jarvis_projects": [
     {
       "description": "Designed, implemented, tested, and deployed a Linux cluster monitoring agent to gather and monitor hardware specifications and real-time resource usage of a Linux cluster. Created Bash scripts to automate processes for creating, starting, and stopping the Docker container used for the PostgreSQL instance, as well as to automate creation of PostgreSQL database tables. Populated database tables with hardware specifications and resource usage data using Linux commands. Automated gathering of hardware specifications and resource usage data by using Cron to schedule running the data collection scripts every 60 seconds and updating the database accordingly. Enhanced system visibility and resource optimization for system administrators to help them make informed decisions on future resource planning.",
-      "git_url": "https://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa/tree/develop/linux_sql",
+      "git_url": "/tree/develop/linux_sql",
       "name": "Linux Cluster Monitoring Agent"
     },
     {
       "description": "Created a Java application that mimics the functionality of the Linux Grep command by letting users search for specific patterns within files. Given a regex pattern, a directory path, and a specified output file path, the app searches all files in the given directory, creates a list of lines that match the given regex pattern, and writes all matched lines to the provided output file. The Java Grep App implements 2 different approaches. The first approach uses standard file I/O and for loops, which is sufficient for smaller files. The second approach uses Lambda \u0026 Stream APIs to increase efficiency when handling larger datasets, requiring much less memory to function properly. The app utilizes core Java libraries for file I/O, SLF4J for logging, Stream API for more efficient memory usage, Maven for dependency management and build automation, and is deployed using Docker.",
-      "git_url": "https://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa/tree/feature/grepapp/core_java/grep",
+      "git_url": "/tree/feature/grepapp/core_java/grep",
       "name": "Grep App"
     },
     {
       "description": "Developed a command-line application to simulate the management of a stock portfolio. Users can retrieve current stock information through the Alpha Vantage API and store this data in a PostgreSQL database using JDBC. They can then simulate buying/selling stocks and view currently held positions. The app utilizes Maven for dependency management, Docker for containerization, Jackson for parsing and serializing between JSON and Java objects, JUnit and Mockito for testing, as well as SLF4J and LOG4J for logging.",
-      "git_url": "https://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa/tree/feature/jdbc/core_java/jdbc",
+      "git_url": "/tree/feature/jdbc/core_java/jdbc",
       "name": "Stock Quote App"
     },
     {
       "description": "Carried out analysis on historical transaction data for the London Gift Shop (LGS) company in order to help LGS gain a better understanding of customer purchase patterns through metrics such as monthly sales, customer activity, and RFM (Recency, Frequency, Monetary) analysis. This analysis is meant to help LGS develop targeted marketing campaigns in order to increase customer engagement and improve revenue growth. The project was built using Jupyter Notebook with Python, PostgreSQL for data storage, and various python libraries such as Pandas for data cleaning and manipulation, Numpy for numerical operations, and Matplotlib for generating graphs.",
-      "git_url": "https://github.com/jarviscanada/jarvis_data_eng_VimalMakenthirarasa/tree/feature/python_data_analytics/python_data_analytics",
+      "git_url": "/tree/feature/python_data_analytics/python_data_analytics",
       "name": "Python Data Analytics"
     }
   ],
