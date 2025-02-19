@@ -31,12 +31,12 @@
   "jarvis_projects": [
     {
       "description": "Designed, implemented, tested, and deployed a Linux cluster monitoring agent to gather and monitor hardware specifications and real-time resource usage of a Linux cluster. Created Bash scripts to automate processes for creating, starting, and stopping the Docker container used for the PostgreSQL instance, as well as to automate creation of PostgreSQL database tables. Populated database tables with hardware specifications and resource usage data using Linux commands. Automated gathering of hardware specifications and resource usage data by using Cron to schedule running the data collection scripts every 60 seconds and updating the database accordingly. Enhanced system visibility and resource optimization for system administrators to help them make informed decisions on future resource planning.",
-      "git_url": "../develop/linux_sql",
+      "git_url": "../../develop/linux_sql",
       "name": "Linux Cluster Monitoring Agent"
     },
     {
       "description": "Created a Java application that mimics the functionality of the Linux Grep command by letting users search for specific patterns within files. Given a regex pattern, a directory path, and a specified output file path, the app searches all files in the given directory, creates a list of lines that match the given regex pattern, and writes all matched lines to the provided output file. The Java Grep App implements 2 different approaches. The first approach uses standard file I/O and for loops, which is sufficient for smaller files. The second approach uses Lambda \u0026 Stream APIs to increase efficiency when handling larger datasets, requiring much less memory to function properly. The app utilizes core Java libraries for file I/O, SLF4J for logging, Stream API for more efficient memory usage, Maven for dependency management and build automation, and is deployed using Docker.",
-      "git_url": "../feature/grepapp/core_java/grep",
+      "git_url": "../../tree/feature/grepapp/core_java/grep",
       "name": "Grep App"
     },
     {
